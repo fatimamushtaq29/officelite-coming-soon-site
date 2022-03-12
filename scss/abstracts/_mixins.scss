@@ -1,0 +1,54 @@
+@use 'breakpoints' as *;
+@use 'sass:map';
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+;
+
+@mixin mediaQuery($size-name) {
+    @if map-has-key($breakpoints, $size-name) {
+        $size: map-get($breakpoints, $size-name);
+        @media (min-width: $size) {
+            @content
+        };
+    } @else {
+        $size: $size-name;
+        @media (min-width: $size) {
+            @content
+        };
+    } 
+}
+
+@mixin mediaQueryMinMax($min-size, $max-size: 5000px) {
+    @if map-has-key($breakpoints, $min-size) {
+        $size1: map-get($breakpoints, $min-size);
+        @if map-has-key($breakpoints, $max-size) {
+            $size2: map-get($breakpoints, $max-size);
+            @media (min-width: $size1) and (max-width: $size2) {
+                @content
+            };
+        } @else {
+            $size2: $max-size;
+            @media (min-width: $size1) and (max-width: $size2) {
+                @content
+            };
+        }
+    } @else {
+        $size1: $min-size;
+        @if map-has-key($breakpoints, $max-size) {
+            $size2: map-get($breakpoints, $max-size);
+            @media (min-width: $size1) and (max-width: $size2) {
+                @content
+            };
+        } @else {
+            $size2: $max-size;
+            @media (min-width: $size1) and (max-width: $size2) {
+                @content
+            };
+        }
+    }
+}

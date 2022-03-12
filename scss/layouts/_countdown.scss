@@ -1,0 +1,96 @@
+@use "../abstracts" as *;
+
+.index-page-footer {
+    padding: 55.875rem clamp(2.469rem, -6.496rem + 18.676vw, 10.313rem) 100px; //from tablet to laptop; clamp(39.5px-165px)
+    background-image: url("assets/home/bg-pattern-footer.svg");
+    background-repeat: no-repeat;
+    background-size: 75.125rem;
+    background-position: center bottom -6.875rem;
+    background-color: $background-black;
+    text-align: center;
+    @include mediaQuery(37.25rem) {
+        padding-top: 37.375rem;
+        background-size: 90.875rem;
+        background-position: center bottom -30.188rem; 
+    }
+    @include mediaQuery(68.938rem) {
+        padding-block: 21rem 5.688rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-size: 127.25rem;
+        background-position: right clamp(-10.625rem, -67.084rem + 81.899vw, 6.625rem) bottom -51.188rem;
+    }
+}
+.countdown-container {
+    @include flexCenter(column);
+    @include mediaQuery(69rem) {
+        align-items: flex-start;
+        .countdown {
+            margin-block: 0;
+        }
+    }
+    .launch-date {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 3rem;
+        letter-spacing: 0.313rem;
+        color: white;
+        span {
+            color: $button-blue;
+        }
+    }
+    .countdown {
+        margin-block: 1.125rem 2.5rem;
+        display: flex;
+        gap: clamp(0.833rem, 0.674rem + 0.68vw, 1rem); //from mobile to tablet; 13.333px-16px
+        text-align: center;
+        @include mediaQuery(37.25rem) {
+            margin-block: 0.5rem 3rem;
+        }
+        .time-card {
+            width: clamp(4.5rem, 2.830rem + 7.125vw, 6.25rem); //from mobile to tablet; 72px-100px
+            padding-block: clamp(0.656rem, 0.298rem + 1.527vw, 1.031rem); //from mobile to tablet; 10.5px-16.5px;
+            border-radius: clamp(0.25rem, -0.287rem + 2.292vw, 0.813rem); //from mobile to tablet; 4px-13px;
+            background-color: $heading-black;
+            .time-number {
+                font-weight: $bold;
+                font-size: clamp(2rem, 0.569rem + 6.107vw, 3.5rem); //from mobile to tablet; 32px-56px
+                line-height: clamp(3rem, 2.046rem + 4.071vw, 4rem); //from mobile to tablet; 48px-64px
+                color: white;
+                span {
+                    line-height: clamp(3rem, 2.523rem + 2.036vw, 3.5rem); //from mobile to tablet; 48px-56px
+                    vertical-align: bottom;
+                }
+            }
+            .time-unit {
+                margin-top: clamp(-0.313rem, -0.791rem + 2.04vw, 0.188rem); //from mobile to tablet; -5px-3px
+                font-weight: $bold;
+                font-size: clamp(0.75rem, 0.512rem + 1.018vw, 1rem); //from mobile to tablet; 12px-16px
+                line-height: 1.75rem;
+                color: $half-white;
+            }
+        }
+    }
+}
+
+.signup {
+    .countdown-container {
+        .launch-date {
+            color: $heading-black;
+        }
+        .countdown {
+            margin-bottom: 0;
+            .time-card {
+                background-color: $button-light-blue;
+            }
+            .time-number {
+                color: $button-blue;
+            }
+            .time-unit {
+                color: $time-unit-grey;
+            }
+        }
+    }
+}

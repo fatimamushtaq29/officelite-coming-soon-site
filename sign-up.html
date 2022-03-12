@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Officelite coming soon site</title>
+</head>
+
+<body class="signup">
+  <article class="main-and-footer-container">
+    <header>
+      <img src="assets/shared/logo.svg" alt="" class="logo">
+    </header>
+    <article class="main-container">
+      <div class="hero-container">
+        <div class="hero">
+          <h1 class="heading">Work smarter. Save time.</h1>
+          <p class="description">Easily manage your projects. Get on the list and receive in-app perks available only to
+            early subscribers. We are moving into final development and getting ready for official launch soon.</p>
+        </div>
+      </div>
+      <section class="countdown-container">
+        <p class="launch-date">Coming <span>4 Nov 2020</span></p>
+        <div class="countdown">
+          <div class="time-card days">
+            <p class="time-number"><span>47</span></p>
+            <p class="time-unit">days</p>
+          </div>
+          <div class="time-card hours">
+            <p class="time-number"><span>07</span></p>
+            <p class="time-unit">hours</p>
+          </div>
+          <div class="time-card min">
+            <p class="time-number"><span>56</span></p>
+            <p class="time-unit">min</p>
+          </div>
+          <div class="time-card sec">
+            <p class="time-number"><span>14</span></p>
+            <p class="time-unit">sec</p>
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer>
+      <form action="" class="form" novalidate>
+        <div class="form-field name">
+          <input type="text" placeholder="Name" name="name" id="name">
+          <img src="assets/sign-up/icon-cross.svg" alt="" class="cross-icon">
+        </div>
+        <div class="form-field email">
+          <input type="email" placeholder="Email Address" name="email" id="email">
+          <img src="assets/sign-up/icon-cross.svg" alt="cross-icon" class="cross-icon">
+        </div>
+        <div class="form-field package">
+          <p class="selected">Basic Pack<span>Free</span>
+            <img src="assets/sign-up/icon-arrow-down.svg" alt="icon-arrow-down" class="arrow-icon">
+          </p>
+          <div class="options-container">
+            <div class="option">
+              <p class="option-name basic">Basic Pack<span>Free</span>
+                <img src="assets/sign-up/icon-check.svg" alt="check-icon">
+              </p>
+              <input type="radio" name="package" value="basic" id="basic" checked>
+            </div>
+
+            <div class="option">
+              <p class="option-name pro">Pro Pack<span>$9.99</span>
+                <img src="assets/sign-up/icon-check.svg" alt="check-icon">
+              </p>
+              <input type="radio" name="package" value="pro" id="pro">
+            </div>
+
+            <div class="option">
+              <p class="option-name ultimate">Ultimate Pack<span>$19.99</span>
+                <img src="assets/sign-up/icon-check.svg" alt="check-icon">
+              </p>
+              <input type="radio" name="package" value="ultimate" id="ultimate">
+            </div>
+
+          </div>
+        </div>
+        <div class="form-field phone-number">
+          <input type="text" placeholder="Phone Number" name="phone-number" id="phone-number">
+        </div>
+        <div class="form-field company">
+          <input type="text" placeholder="Company" name="company" id="company">
+        </div>
+        <button class="button form-submission">Get on the list</button>
+      </form>
+    </footer>
+  </article>
+  <script src="scripts/package-dropdown-select.js"></script>
+  <script src="scripts/live-countdown-signup.js"></script>
+  <script src="scripts/form-validation.js"></script>
+</body>
+
+</html>

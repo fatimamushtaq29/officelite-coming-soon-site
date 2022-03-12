@@ -1,0 +1,60 @@
+@use "../abstracts" as *;
+
+.package {
+    p {
+        display: flex;
+        align-items: center;
+        font-weight: $bold;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        color: $heading-black;
+        text-align: left;
+        position: relative;
+        span {
+            margin-left: 0.5rem;
+            color: $black-for-select;
+        }
+    }
+    p.selected {
+        padding-left: 1rem;
+    }
+    .options-container {
+        display: var(--options-container-display);
+        animation-name: fadein;
+        animation-duration: 250ms;
+        @keyframes fadein {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+        }
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        z-index: 1;
+        border-radius: 0.5rem;
+        border: 0.063rem solid $options-container-border;
+        transform: translateY(0.5rem);
+        background-color: white;
+        padding: 0.5rem 2rem;
+        box-shadow: 0px 3.125rem 3.125rem -1.563rem $box-shadow-options-menu;
+        .option {
+            padding: 1rem 0;
+            border-bottom: 0.063rem solid $options-bottom-border;
+            &:last-child {
+                border-bottom: none;
+            }
+            input {
+                display: none;
+            }
+        }
+        img {
+            display: var(--selected-option-check-icon-display);
+            right: 0.438rem;
+            height: 0.594rem;
+            width: 0.781rem;
+        }
+    }
+}

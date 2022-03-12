@@ -1,0 +1,19 @@
+:root {
+    --options-container-display: none;
+    --selected-option-check-icon-display: none;
+    --cross-icon-display: none;
+    --rotation: none;
+}
+
+.show-options-container {
+    --options-container-display: block;
+    --rotation: rotate(180deg);
+}
+
+.show-check-icon {
+    --selected-option-check-icon-display: block;
+}
+
+.form-field-error {
+    --cross-icon-display: block;
+}

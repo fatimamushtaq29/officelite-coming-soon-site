@@ -1,0 +1,107 @@
+@use "../abstracts" as *;
+
+.pricing-container {
+    position: absolute;
+    transform: translateY(-50%);
+    padding: 0 clamp(1.5rem, 0.575rem + 3.945vw, 2.469rem); //from mobile to tablet; 0 24px-39.5px
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 2.477rem + -2.036vw, 2rem); //from mobile to tablet; 32px-24px
+    @include mediaQuery(68.938rem) {
+        flex-direction: row;
+        padding: 0 clamp(2.469rem, -6.496rem + 18.676vw, 10.313rem); //from tablet to laptop; 0 39.5px-165px
+        gap: clamp(1.5rem, 0.273rem + 1.780vw, 1.875rem); //from 1103px to laptop; 24px-30px
+    }
+    .pricing-card {
+        width: 100%;
+        align-self: center;
+        padding-block: 2.5rem;
+        background-color: white;
+        border-radius: 0.813rem;
+        max-width: 43.125rem;
+        .package-name {
+            font-weight: bold;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            color: $heading-black;
+        }
+        .package-price {
+            margin-block: 2.5rem 0.5rem;
+            font-weight: bold;
+            font-size: 3.5rem;
+            line-height: 4rem;
+            color: $heading-black;
+        }
+        .user-count {
+            margin-bottom: 3.5rem;
+            font-size: 1rem;
+            line-height: 1.75rem;
+            color: $heading-black;
+        }
+        .features {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .features-item {
+                font-size: 1rem;
+                line-height: 1.75rem;
+                color: $font-grey;
+            }
+        }
+        .package-signup {
+            background-color: $button-light-blue;
+            color: $button-blue;
+            &:hover {
+                background-color: $hover-button2;
+            }
+        }
+        @include mediaQueryMinMax(37.25rem, 68.938rem) {
+            position: relative;
+            padding: 3rem;
+            text-align: left;
+            .package-price {
+                margin-block: 1rem 0.25rem;
+            }
+            .user-count {
+                margin-bottom: 1.5rem;
+            }
+            .features {
+                position: absolute;
+                left: clamp(16.5rem, -12.954rem + 79.07vw, 25rem); //from mobile to tablet; 274px-400px
+                top: 5.75rem;
+            }
+        }
+    }
+    .pricing-card.pro {
+        background-image: url("assets/home/bg-pattern-pricing.svg");
+        background-position: center bottom 0.438rem;
+        background-repeat: no-repeat;
+        background-color: $button-blue;
+        .package-name {
+            color: white;
+        }
+        .package-price {
+            color: white;
+        }
+        .user-count {
+            color: white;
+        }
+        .features-item {
+            color: $off-white;
+        }
+        .package-signup {
+            background-color: white;
+            color: $button-blue;
+            transition: color 250ms;
+            &:hover {
+                color: $hover-button1;
+            }
+        }
+        @include mediaQueryMinMax(37.25rem, 68.938rem) {
+            background-position: center right clamp(-1.563rem, -34.7rem + 88.958vw, 8rem); //from 596px to tablet; -25px-128px
+        }
+    }
+}

@@ -1,0 +1,99 @@
+@use '../abstracts' as *;
+
+header {
+    text-align: center;
+    margin-top: clamp(2.875rem, 1.324rem + 6.616vw, 4.5rem); //from mobile to tablet; 46px-72px
+    margin-bottom: clamp(5rem, 3.569rem + 6.107vw, 6.5rem); //from mobile to tablet; 80px-104px
+    @include mediaQuery(laptop) {
+        text-align: left;
+        margin-top: clamp(4.5rem, 3.857rem + 1.341vw, 5.063rem); //from tablet to desktop; 72px-81px
+        padding-left: clamp(2.469rem, -6.496rem + 18.676vw, 10.313rem); //from tablet to laptop; 39.5px-165px;
+    }
+}
+.main-container {
+    .hero-container {
+        @include flexCenter(column);
+        gap: clamp(4rem, 1.785rem + 4.614vw, 5.938rem); //from tablet to laptop; 64px-95px
+        @include mediaQuery(laptop) {
+            flex-direction: row-reverse;
+        }
+        .illustration-charts {
+            width: clamp(10.688rem, 4.128rem + 27.99vw, 17.563rem); //from mobile to tablet; 171px-281px
+            @include mediaQuery(laptop) {
+                width: clamp(17.563rem, 3.706rem + 28.869vw, 29.688rem); //from tablet to laptop; 281px-475px
+            }
+        }
+        .hero {
+            text-align: center;
+            h1 {
+                font-weight: $bold;
+                font-size: clamp(2.5rem, 1.357rem + 2.381vw, 3.5rem); //from tablet to laptop; 40px-56px
+                line-height: clamp(3rem, 1.857rem + 2.381vw, 4rem); //from tablet to laptop; 48px-64px
+                color: $heading-black;
+            }
+            .description {
+                font-size: clamp(1rem, 0.857rem + 0.298vw, 1.125rem); //from tablet to laptop; 16px-18px
+                line-height: clamp(1.625rem, 1.482rem + 0.298vw, 1.75rem); //from tablet to laptop; 26px-28px
+                color: $font-grey;
+            }
+        }
+    }
+}
+
+//different header styles for index page
+.index {
+    header {
+        @include mediaQuery(laptop) {
+            margin-bottom: clamp(6.375rem, 6.643rem + -0.298vw, 6.5rem); //from tablet to laptop; 104px-102px
+        }    
+    }
+    .main-container {
+        padding: 0 clamp(1.5rem, 0.575rem + 3.945vw, 2.469rem); //from mobile to tablet; 0 24px-39.5px
+        margin-bottom: 55.875rem;
+        @include mediaQuery(37.25rem) {
+            margin-bottom: 39.875rem;
+        }
+        @include mediaQuery(laptop) {
+            padding: 0 clamp(2.469rem, -6.496rem + 18.676vw, 10.313rem); //from tablet to laptop; 0 39.5px-165px
+        }
+        @include mediaQuery(68.938rem) {
+            margin-bottom: 27.375rem;
+        }
+        .hero-container {
+            padding: 0 clamp(0rem, -3.489rem + 14.885vw, 3.656rem); //from mobile to tablet; 0 0px-58.5px
+            @include mediaQuery(laptop) {
+                padding: 0;
+                .hero {
+                    text-align: left;
+                }
+            }
+            & .hero .description {
+                margin-block: 1.5rem;
+            }
+        }
+    }
+}
+
+//different header styles for sign-up page
+.signup {
+    .main-container {
+        padding-bottom: clamp(38.5rem, 31.403rem + 30.282vw, 45.938rem); //from mobile to tablet; 616px-735px
+        @include mediaQuery(69rem) {
+            padding: 0 0 0 clamp(5rem, -12.457rem + 25.3vw, 10.313rem); //from 1104px to 1440px; 80px-165px
+            width: clamp(35.938rem, 9.242rem + 38.691vw, 44.063rem);
+        }
+        .hero-container {
+            padding: 0 clamp(1.5rem, -2.913rem + 18.83vw, 6.125rem);
+            margin-bottom: clamp(2.5rem, 5.431rem + -6.107vw, 4rem); //from mobile to tablet; 64px-40px
+            @include mediaQuery(69rem) {
+                padding: 0;
+                .hero {
+                    text-align: left;
+                }
+            }
+            .hero .description {
+                margin-top: clamp(1rem, 0.523rem + 2.036vw, 1.5rem); //from mobile to tablet; 16px-24px
+            }
+        }
+    }
+}

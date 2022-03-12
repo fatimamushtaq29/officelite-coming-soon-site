@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="475" height="531" xmlns:v="https://vecta.io/nano">
+    <style>
+        <![CDATA[.B{fill:#fff}.C{mask:url(#J)}.D{font-family:KumbhSans-Bold, Kumbh Sans}.E{font-weight:bold}.F{fill:#747b95}.G{opacity:.5}.H{font-size:11px}.I{fill:#7da7ff}.J{fill:#5175ff}]]>
+    </style>
+    <defs>
+        <style>@font-face{font-family:"KumbhSans-Bold";src:url(data:application/font-woff;charset=utf-8;base64,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) format("woff"); font-weight:bold;font-style:normal;}</style>
+        <filter x="-27.9%" y="-12.1%" width="155.8%" height="148.5%" id="A">
+            <feMorphology radius="12.5" in="SourceAlpha" />
+            <feOffset dy="50" />
+            <feGaussianBlur stdDeviation="25" />
+            <feColorMatrix values="0 0 0 0 0.293478072 0 0 0 0 0.359720343 0 0 0 0 0.604534647 0 0 0 0.247159091 0" />
+        </filter>
+        <filter x="-27.9%" y="-25.7%" width="155.8%" height="202.7%" id="B">
+            <feMorphology radius="12.5" in="SourceAlpha" />
+            <feOffset dy="50" />
+            <feGaussianBlur stdDeviation="25" />
+            <feColorMatrix values="0 0 0 0 0.293478072 0 0 0 0 0.359720343 0 0 0 0 0.604534647 0 0 0 0.247159091 0" />
+        </filter>
+        <filter x="-27.9%" y="-7.8%" width="155.8%" height="131.1%" id="C">
+            <feMorphology radius="12.5" in="SourceAlpha" />
+            <!-- <feOffset dy="50" /> -->
+            <feGaussianBlur stdDeviation="25" />
+            <feColorMatrix values="0 0 0 0 0.293478072 0 0 0 0 0.359720343 0 0 0 0 0.604534647 0 0 0 0.247159091 0" />
+        </filter>
+        <rect id="D" width="224" height="309" rx="13" />
+        <rect id="E" width="224" height="146" rx="13" />
+        <rect id="F" width="224" height="483" rx="13" />
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="G">
+            <stop stop-color="#024aff" stop-opacity=".148" offset="0%" />
+            <stop stop-color="#3b77cf" stop-opacity="0" offset="100%" />
+        </linearGradient>
+        <circle id="H" cx="59" cy="59" r="59" />
+        <mask id="I" x="0" y="0" width="118" height="118" class="B">
+            <use xlink:href="#H" />
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(0 46)">
+            <mask id="J" class="B">
+                <use xlink:href="#D" />
+            </mask>
+            <use fill="#000" filter="url(#A)" xlink:href="#D" />
+            <use xlink:href="#D" class="B" />
+            <path fill="url(#G)" d="M-36.826 240.688L56.5 209.026 112 127.17l56.5 18.01 75.17-116.672V269l-280.496-1z" class="C" />
+            <path stroke="#5175ff" stroke-width="2" d="M-36.826 240.688L56.5 209.026 112 127.17l56.5 18.01 75.17-116.672V269" class="C" />
+            <g class="J C">
+                <path opacity=".152" d="M112 0h1v250h-1zM56 0h1v250h-1zM169 0h1v250h-1z" />
+                <circle cx="112" cy="127" r="6" />
+            </g>
+            <circle stroke="#5175ff" opacity=".25" cx="112" cy="127" r="17.5" class="C" />
+            <g class="J C">
+                <circle cx="56" cy="209" r="6" />
+                <circle cx="169" cy="145" r="6" />
+                <circle cx="224" cy="60" r="6" />
+                <circle cy="228" r="6" />
+            </g>
+            <g class="C">
+                <text class="D E G H">
+                    <tspan x="104.15" y="292" class="F">Jan</tspan>
+                    <tspan x="45.779" y="292" class="F">Dec</tspan>
+                    <tspan x="-10.466" y="292" class="F">Nov</tspan>
+                    <tspan x="158.308" y="292" class="F">Feb</tspan>
+                    <tspan x="213.725" y="292" class="F">Mar</tspan>
+                </text>
+                <path opacity=".25" d="M0 268h224v1H0zm112-8h1v8h-1zm-56 0h1v8h-1zm112 0h1v8h-1z" class="F" />
+            </g>
+        </g>
+        <g transform="translate(0 385)">
+            <mask id="K" class="B">
+                <use xlink:href="#E" />
+            </mask>
+            <use fill="#000" filter="url(#B)" xlink:href="#E" />
+            <use fill="#333950" xlink:href="#E" />
+            <g mask="url(#K)" fill="#fefefe" fill-rule="nonzero">
+                <path d="M80.64 95v-2.448l-6.768-.936 3.96-13.68h16.56l4.392 13.896-6.408.72V95h24.552v-2.448l-5.76-.648L93.888 41H86.4L70.128 91.688l-5.976.864V95H80.64zM93.6 75.416H78.552l7.2-24.624L93.6 75.416zm58.176 20.808c4.608 0 7.344-1.656 9.144-5.616l-1.224-1.008c-1.368 2.16-2.16 2.736-3.24 2.736-1.368 0-2.232-.936-2.232-3.672V69.296c0-10.44-4.104-14.832-14.328-14.832-11.16 0-17.424 4.32-18 11.088.576 2.376 2.376 3.672 4.968 3.672 2.736 0 5.184-1.944 5.4-6.84l.504-5.112a14.805 14.805 0 0 1 3.024-.288c5.472 0 7.2 2.232 7.2 9.72v4.392l-7.056 1.872C124.344 76.352 120.6 79.88 120.6 86.432c0 6.048 4.32 9.792 10.512 9.792 5.76 0 8.496-2.232 12.168-6.264 1.08 3.888 3.744 6.264 8.496 6.264zm-15.048-4.896c-3.384 0-5.4-2.016-5.4-6.336 0-5.256 2.664-8.64 7.704-10.728.864-.36 2.304-.792 3.96-1.224v14.976c-2.664 2.376-4.32 3.312-6.264 3.312zM63 100v4h95.132v-4z" />
+                <path d="M-67 71v4h95.132v-4zm260 0v4h95.132v-4z" opacity=".15" />
+            </g>
+        </g>
+        <g transform="translate(251)">
+            <use fill="#000" filter="url(#C)" xlink:href="#F" />
+            <use xlink:href="#F" class="J" />
+        </g>
+        <path opacity=".15" d="M251 182h224v1H251z" class="B" />
+        <g transform="translate(304 32)">
+            <circle stroke="#fff" opacity=".146" cx="59" cy="59" r="55.5" />
+            <use stroke="#5cfcd3" mask="url(#I)" stroke-width="20" stroke-dasharray="302" xlink:href="#H" />
+            <text font-size="32" fill="#5cfcd3" class="D E">
+                <tspan x="26" y="70">87%</tspan>
+            </text>
+        </g>
+        <text font-size="40" class="B D E">
+            <tspan x="327" y="236">98k</tspan>
+        </text>
+        <rect width="14" height="14" rx="7" x="283" y="282" class="B" />
+        <rect x="312" width="131" height="14" rx="7" y="282" class="I" />
+        <rect width="14" height="14" rx="7" x="283" y="316" class="B" />
+        <rect x="312" width="83" height="14" rx="7" y="316" class="I" />
+        <rect width="14" height="14" rx="7" x="283" y="350" class="B" />
+        <rect x="312" width="131" height="14" rx="7" y="350" class="I" />
+        <rect width="14" height="14" rx="7" x="283" y="384" class="B" />
+        <rect x="312" width="79" height="14" rx="7" y="384" class="I" />
+        <rect width="14" height="14" rx="7" x="283" y="418" class="B" />
+        <rect x="312" width="131" height="14" rx="7" y="418" class="I" />
+    </g>
+</svg>

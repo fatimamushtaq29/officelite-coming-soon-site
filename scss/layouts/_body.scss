@@ -1,0 +1,88 @@
+@use "../abstracts" as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("assets/home/bg-pattern-header.svg");
+    background-repeat: no-repeat;
+    background-size: clamp(28.625rem, 16.220rem + 52.926vw, 41.625rem); //from mobile to tablet; 458px-666px
+    background-position: center top -10.625rem;
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: $header-background;
+    @include mediaQuery(laptop) {
+        background-size: clamp(41.625rem, 8.1964rem + 69.6429vw, 70.875rem); //from tablet to laptop; 666px-1134px
+        background-position: top clamp(-26.188rem, 7.965rem + -37.948vw, -10.25rem) right clamp(-21.875rem, -14.242rem + -8.481vw, -18.313rem); //from tablet to laptop; top (-164px) to (-419px) right (-293px) to (-350px)_
+    }
+}
+
+body.signup {
+    @include mediaQuery(37.25rem) {
+        background-image: none;
+    }
+}
+
+.button {
+    font-family: "Kumbh Sans", sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    border-radius: 1.75rem;
+    padding: 0.875rem 2.563rem;
+    background-color: $button-blue;
+    transition: background-color 250ms;
+    color: white;
+    &:hover {
+        background-color: $hover-button1;
+    }
+}
+
+.index footer {
+    position: relative;
+}
+
+.signup footer {
+    max-height: clamp(20rem, 16.422rem + 15.267vw, 23.75rem); //from mobile to tablet; 320px-380px
+    padding: 0px clamp(1.5rem, -6.700rem + 34.988vw, 10.094rem); //from mobile to tablet; 0 24px-161.5px
+    background-image: url("assets/home/bg-pattern-footer.svg");
+    background-repeat: no-repeat;
+    background-size: clamp(75.125rem, 60.096rem + 64.122vw, 90.875rem); //from mobile to tablet; 1202px-1454px
+    background-position: center bottom -29.625rem;
+    background-color: $background-black;
+    @include mediaQuery(37.25rem) {
+        background-position: center;
+    }
+    @include mediaQuery(69rem) {
+        max-height: none;
+        width: clamp(20.125rem, 0.0000rem + 29.167vw, 26.25rem);
+        background-size: 127.25rem;
+        background-position: top -48.813rem right -53.313rem;
+        padding: 0;
+    }
+}
+
+.main-and-footer-container {
+    position: relative;
+    footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    @include mediaQuery(69rem) {
+        display: flex;
+        flex-direction: column;
+        min-height: 60.75rem;
+        header {
+            padding-left: clamp(5rem, -12.457rem + 25.3vw, 10.313rem); //from 1104px to 1440px; 80px-165px;
+        }
+        footer {
+            top: 0;
+            left: auto;
+            bottom: 0;
+        }
+    }
+}

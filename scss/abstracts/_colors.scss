@@ -1,0 +1,28 @@
+$header-background: #FAFAFA;
+$background-black: #25293A;
+$heading-black: #333950;
+$black-for-select: #33395066; // 0.4 opacity
+$options-container-border: #33395025; // 0.15 opactiy
+$time-unit-grey: #33395080; // 0.5 opacity
+$font-grey: #747B95;
+// $font-grey-half: #747B9580; // 0.5 opacity
+$options-bottom-border: #747B9540; // 0.25 opacity
+$button-blue: #5175FF;
+$button-light-blue: #5175ff26; // 0.15 opacity
+$off-white: #FFFFFFBF; // 0.75 opacity
+$half-white: #FFFFFF80; // 0.5 opacity
+$hover-button1: #829CFF;
+$hover-button2: #5175FF40; // 0.25 opacity
+$box-shadow-options-menu: #4B5C9ABE; // 0.75 opacity
+$box-shadow-form: #4B5C9A3F; // 0.25 opacity
+
+:root {
+    --form-field-color: #747B9580;
+    --input-color: #333950;
+    
+}
+
+.form-field-error {
+    --form-field-color: #F05B5B;
+    --input-color: #F05B5B;
+}
