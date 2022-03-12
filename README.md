@@ -46,8 +46,8 @@ Active States (Desktop): ![](/screenshots/Desktop%20-%20Sign%20Up%20-%20Active%2
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-using-javascript-html-and-scss-c-VNULUsj](https://www.frontendmentor.io/solutions/responsive-landing-page-using-javascript-html-and-scss-c-VNULUsj)
+- Live Site URL: [https://fatimamushtaq29.github.io/officelite-coming-soon-site/](https://fatimamushtaq29.github.io/officelite-coming-soon-site/)
 
 ## My process
 
